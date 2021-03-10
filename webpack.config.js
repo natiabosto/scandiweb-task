@@ -7,10 +7,6 @@ module.exports = {
         filename: "bundle.[hash].js",
         path: path.resolve(__dirname, "dist"),
     },
-    // devServer: {
-    //     contentBase: path.resolve(__dirname, "dist"),
-    //     publicPath: "/assets"
-    // },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html",
