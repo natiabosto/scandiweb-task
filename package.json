@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --hot --open",
+    "dev": "webpack --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "keywords": [],
