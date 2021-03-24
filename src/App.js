@@ -17,6 +17,8 @@ const App = () => {
   return (
     <Wrapper>
       <Carousel images={mockPhotos.landscapes} />
+      <br />
+      <Carousel images={mockPhotos.animals} />
     </Wrapper>
   )
 };
