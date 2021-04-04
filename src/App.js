@@ -1,7 +1,7 @@
 import React from 'react';
 import 'App.css';
 import { Carousel } from './components';
-import { mockPhotos } from './constants';
+import { mockData } from './constants';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -16,9 +16,11 @@ const App = () => {
 
   return (
     <Wrapper>
-      <Carousel images={mockPhotos.landscapes} />
+      <Carousel content={mockData.landscapes} />
       <br />
-      <Carousel images={mockPhotos.animals} />
+      <Carousel content={mockData.animals} loop={false} />
+      <br />
+      <Carousel content={mockData.html} arrowColor='rgb(167 167 167 / 50%)' />
     </Wrapper>
   )
 };
